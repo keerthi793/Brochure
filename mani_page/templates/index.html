@@ -1,0 +1,40 @@
+{% load staticfiles %}
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <title>HTML Portfolio</title>
+</head>
+<body>
+  <div class="body">
+  <div class="header">
+    <h1>KEERTHIVASAN</h1>
+    <h2>Web designer</h2>
+  </div>
+  <div class="tagline">
+    <h3>A short note about me</h3>
+    <p>I am a web designer currently enhancing my skills</p>
+  </div>
+  <div class="skills">
+    {% for i in skills %}
+    <h3>My skill set are as follows:</h3>
+    <p>I enjoy writting code in following<p>
+    <ul>
+      <li>{{ i.first }}</li>
+      <li>{{ i.second }}</li>
+      <li>{{ i.third }}</li>
+    </ul>
+    {% endfor %}
+  </div>
+  <div class="contact">
+    <h3>Contact me</h3>
+    <p>Please find me <a href="https://twitter.com/keerthi793" >@keerthi793</a></p>
+  </div>
+  </div>
+</body>
+</html>

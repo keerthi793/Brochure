@@ -1,0 +1,44 @@
+html, body, h1, h2,
+h3, p, ol, ul, li, a {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  //font-size: 100%;
+  //font: inherit;
+  // border: 0.5px solid white;
+}
+
+.header {
+    text-align: center;
+    // border: 0.5px solid red;
+    margin: 30px 30px;
+  }
+
+.skills,.tagline, .contact  {
+    // border: 0.5px solid red;
+    margin: 30px 30px;
+    padding-left: 120px;
+}
+
+ul {
+  padding-left: 55px;
+}
+
+h1{
+  font-family: "Aref Ruqaa";
+  font-size: 32px;
+}
+h2 {
+  margin: 10px 0 10px 0;
+  font-family: "Aref Ruqaa";
+  font-size: 25px;
+}
+
+h3{
+  font-family: 'Arvo', serif;
+}
+
+p,ul {
+  font-family: 'Dosis', sans-serif;
+  font-size: 18px;
+}
